@@ -76,7 +76,7 @@ public class AcessoBD extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();//ContentValues é uma classe que permite armazenar dados agrupados aos pares. Exemplo contentValues.put("nome", value); contentValues.getString("name"). É uma associative array em PHP ou hashmap em outras linguagens.
         contentValues.put(USUARIO_NOME, usuario.getNomeUsuario());
         contentValues.put(USUARIO_EMAIL, usuario.getEmailUsuario());
-        contentValues.put(USUARIO_SENHA, usuario.getSenhaUsuario());//***********************
+        contentValues.put(USUARIO_SENHA, usuario.getSenhaUsuario());
         contentValues.put(USUARIO_ID, usuario.getIdUsuario());
         //Por quê não tem o ID aqui? Porque o ID é tem incremento automático (AUTOINCREMENT). Veja a linha "CREATE TABLE..." dentro do método onCreate.
 

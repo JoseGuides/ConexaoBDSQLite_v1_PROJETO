@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Sucesso:" + sucesso, Toast.LENGTH_SHORT).show();
 
                 } catch (NumberFormatException e) {
-                    Toast.makeText(MainActivity.this, "Erro na conversão de uma String para int: Idade não corresponde a número!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Erro na conversão de uma String para int: E-mail não corresponde!", Toast.LENGTH_LONG).show();
                 } catch (Exception e) {
                     Toast.makeText(MainActivity.this, "Erro na criação do usuário!", Toast.LENGTH_LONG).show();
                     usuario = new Usuario(-1, "erro", "erro", -1);
